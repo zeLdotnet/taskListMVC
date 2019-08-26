@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@model IEnumerable<UserTask>
+<div class="row">
+    @foreach (var task in Model)
+    {
+        <div class="col-md-4">
+            <h4>@task.Task</h4>
+            <p> @task.DueDate</p>
+        </div>
+    }
+
+
+</div>
